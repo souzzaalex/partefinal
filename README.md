@@ -42,5 +42,84 @@
 
     <script src="script.js"></script>
 </body>
-</html>
+</html> 
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+#conteudo {
+    padding: 20px;
+}
+
+#descricao {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#imagem-filme {
+    text-align: center;
+}
+
+#imagem-filme img {
+    width: 100%;
+    max-width: 500px;
+}
+
+button {
+    background-color: #0066cc;
+    color: white;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+button:hover {
+    background-color: #004d99;
+}
+
+footer {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    color: #ccc;
+}
+
+
+// Função que exibe uma mensagem sobre viagens interdimensionais
+document.getElementById('mostrar-mensagem').addEventListener('click', function() {
+    const mensagemDiv = document.getElementById('mensagem');
+    if (mensagemDiv.style.display === 'none') {
+        mensagemDiv.style.display = 'block';
+    } else {
+        mensagemDiv.style.display = 'none';
+    }
+});
+
+// Função que exibe o trailer do filme
+function mostrarTrailer() {
+    const videoDiv = document.getElementById('video-trailer');
+    if (videoDiv.style.display === 'none') {
+        videoDiv.style.display = 'block';
+    } else {
+        videoDiv.style.display = 'none';
+    }
+}
+
 
